@@ -1,0 +1,58 @@
+.portfolio {
+    margin-top: -3px;
+    .element_block {
+        border: 3px solid $main-color_white;
+        .portfolio__wrapper {
+            margin: 160px 0 160px 0;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .card {
+                position: relative;
+                width: 567px;
+                height: 356px;
+                border: 2px solid $main-color_white;
+                font-weight: 500;
+                font-size: 80px;
+                line-height: 96px;
+                color: #F3F3F3;
+                perspective: 1000px;
+                }
+            .card-one, .card-two, .card-three, .card-four {
+                .front, .back {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    transition: 0.9s all;
+                    backface-visibility: hidden;
+                }
+                .front {
+                    padding: 20px;
+                }
+                .back{
+                    transform: rotateY(180deg);
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        opacity: 0.8;
+                    }
+                }
+                &:hover {
+                    .front {
+                        transform: rotateY(180deg);
+                    }
+                }
+                &:hover {
+                    .back {
+                        transform: rotateY(360deg);
+                    }
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.lets_make {
+    margin-top: -3px;
+    .element_block {
+        position: relative;
+        border: 3px solid $main-color_white;
+        .divider_top {
+            display: block;
+            margin-top: 140px;
+            height: 3px;
+            background-color: $main-color_white;
+        }
+        .title {
+            margin: 140px 0 0 40px;
+            font-weight: 500;
+            font-size: 84px;
+            line-height: 97px;
+            color: $main-color_white;
+        }
+        .divider {
+            display: block;
+            margin-top: 140px;
+            height: 3px;
+            background-color: $main-color_white;
+        }
+        .wrapper {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            .element_one {
+                z-index: 1;
+            }
+            .element_two {
+                margin-left: -183px;
+            }
+        }
+    }
+}

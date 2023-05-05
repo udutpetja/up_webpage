@@ -1,0 +1,29 @@
+.about_me {
+    margin-top: -3px;
+    .element_block {
+        border: 3px solid $main-color_white;
+    }
+    .title {
+        margin-top: 110px;
+        padding-left: 40px;
+        font-weight: 500;
+        font-size: 84px;
+        line-height: 101px;
+        color: $main-color_white;
+    }
+    .divider {
+        display: block;
+        margin-top: 50px;
+        height: 3px;
+        background-color: $main-color_white;
+    }
+    .wrapper {
+        padding: 50px 0 0 120px;
+        display: flex;
+        justify-content: space-between;
+        .right_block {
+            display: flex;
+            align-items: flex-end;
+        }
+    } 
+}
