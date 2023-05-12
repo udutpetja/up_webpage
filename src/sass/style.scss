@@ -10,17 +10,12 @@
     z-index: -2;
     background-image: linear-gradient(to right top, #1d0212, #1c0317, #1a041c, #170620, #100925, #0b0e28, #05132a, #00162c, #001a2c, #001d29, #002025, #002220);
     background-attachment: fixed;
-/*     background-image: url(../img/main-bg.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover; */
+
 }
 .container {
     width: 1140px;
     margin: 0 auto;
 }
-
-
 
 @import 'blocks/first_page';
 @import 'blocks/lets_do';
@@ -28,3 +23,5 @@
 @import 'blocks/about_me';
 @import 'blocks/general_info';
 @import 'blocks/lets_make';
+@import 'blocks/contact';
+@import 'blocks/pageup';

@@ -1,0 +1,60 @@
+.contact {
+    margin-top: -3px;
+    .element_block {
+        border: 3px solid $main-color_white;
+        .divider {
+            display: block;
+            margin-top: 140px;
+            height: 3px;
+            background-color: $main-color_white;
+        }
+        .title {
+            padding-left: 40px;
+            font-weight: 500;
+            font-size: 86px;
+            line-height: 115px;
+            color: $main-color_white;
+        }
+        .wrapper {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: minmax(300px, auto);
+            grid-auto-rows: minmax(1fr);
+            .card {
+                padding-top: 50%;
+                border: 2px solid $main-color_white;
+                font-weight: 300;
+                font-size: 40px;
+                line-height: 46px;
+                color: $main-color_white;
+                text-align: center;
+                a {
+                    color: $main-color_white;
+                }
+            }
+        }
+        .thanks {
+            display: flex;
+            justify-content: flex-end;
+            .thanks_wrapper {
+                position: relative;
+                display: inline-block;
+                .text {
+                    position: absolute;
+                    top: 33%;
+                    left: 0;
+                    width: 100%;
+                    font-weight: 300;
+                    font-size: 24px;
+                    line-height: 28px;
+                    color: $main-color_white;
+                    text-align: center;
+                    text-transform: uppercase;
+                    padding: 40px;
+                }
+            }
+        }
+
+    }
+}

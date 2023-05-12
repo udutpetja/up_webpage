@@ -304,10 +304,6 @@ template {
   z-index: -2;
   background-image: linear-gradient(to right top, #1d0212, #1c0317, #1a041c, #170620, #100925, #0b0e28, #05132a, #00162c, #001a2c, #001d29, #002025, #002220);
   background-attachment: fixed;
-  /*     background-image: url(../img/main-bg.png);
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover; */
 }
 
 .container {
@@ -459,7 +455,7 @@ template {
   backface-visibility: hidden;
 }
 .portfolio .element_block .portfolio__wrapper .card-one .front, .portfolio .element_block .portfolio__wrapper .card-two .front, .portfolio .element_block .portfolio__wrapper .card-three .front, .portfolio .element_block .portfolio__wrapper .card-four .front {
-  padding: 20px;
+  padding: 40px;
 }
 .portfolio .element_block .portfolio__wrapper .card-one .back, .portfolio .element_block .portfolio__wrapper .card-two .back, .portfolio .element_block .portfolio__wrapper .card-three .back, .portfolio .element_block .portfolio__wrapper .card-four .back {
   transform: rotateY(180deg);
@@ -573,4 +569,83 @@ template {
 }
 .lets_make .element_block .wrapper .element_two {
   margin-left: -183px;
+}
+
+.contact {
+  margin-top: -3px;
+}
+.contact .element_block {
+  border: 3px solid #EBE5E5;
+}
+.contact .element_block .divider {
+  display: block;
+  margin-top: 140px;
+  height: 3px;
+  background-color: #EBE5E5;
+}
+.contact .element_block .title {
+  padding-left: 40px;
+  font-weight: 500;
+  font-size: 86px;
+  line-height: 115px;
+  color: #EBE5E5;
+}
+.contact .element_block .wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: minmax(300px, auto);
+  grid-auto-rows: minmax(1fr);
+}
+.contact .element_block .wrapper .card {
+  padding-top: 50%;
+  border: 2px solid #EBE5E5;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 46px;
+  color: #EBE5E5;
+  text-align: center;
+}
+.contact .element_block .wrapper .card a {
+  color: #EBE5E5;
+}
+.contact .element_block .thanks {
+  display: flex;
+  justify-content: flex-end;
+}
+.contact .element_block .thanks .thanks_wrapper {
+  position: relative;
+  display: inline-block;
+}
+.contact .element_block .thanks .thanks_wrapper .text {
+  position: absolute;
+  top: 33%;
+  left: 0;
+  width: 100%;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #EBE5E5;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 40px;
+}
+
+.pageup {
+  display: inline;
+  position: fixed;
+  bottom: 40px;
+  right: 80px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10% 30% 50% 70%;
+  background-color: #677CC7;
+  display: none;
+}
+.pageup img {
+  width: 100%;
+}
+
+.pageup.show {
+  display: block;
 }/*# sourceMappingURL=style.min.css.map */
