@@ -303,7 +303,7 @@ template {
 .scroll {
   z-index: -2;
   background-image: linear-gradient(to right top, #1d0212, #1c0317, #1a041c, #170620, #100925, #0b0e28, #05132a, #00162c, #001a2c, #001d29, #002025, #002220);
-  background-attachment: fixed;
+  /*     background-attachment: fixed; */
 }
 
 .container {
@@ -316,20 +316,20 @@ template {
   padding-top: 32px;
 }
 .first_page .element_block {
-  border: 3px solid #EBE5E5;
+  border: 3px solid #F4F4F4;
 }
 .first_page .title {
   padding: 110px 0 0 40px;
   font-weight: 500;
   font-size: 86px;
   line-height: 115px;
-  color: #EBE5E5;
+  color: #F4F4F4;
 }
 .first_page .divider {
   display: block;
   margin-top: 140px;
   height: 3px;
-  background-color: #EBE5E5;
+  background-color: #F4F4F4;
 }
 .first_page .wrapper {
   padding-top: 160px;
@@ -343,6 +343,7 @@ template {
 }
 .first_page .wrapper .element__item {
   position: relative;
+  display: inline-block;
   transition: all 0.4s;
   /*         &-line {
               &:hover {
@@ -356,43 +357,56 @@ template {
 .first_page .wrapper .element__item-semicircul:hover {
   transform: rotate(-1deg);
 }
+.first_page .wrapper .element__item-semicircul:active {
+  color: #F4F4F4;
+}
 .first_page .wrapper .element__item-star:hover {
   transform: rotate(90deg);
 }
 .first_page .wrapper .element__item-cube:hover {
   transform: rotate(1deg);
 }
+.first_page .wrapper .element__item-cube:active {
+  color: #F4F4F4;
+}
 .first_page .wrapper .element__item-triqngle:hover {
   transform: translate(4px);
 }
-.first_page .wrapper .element__item .element__text {
-  display: block;
+.first_page .wrapper .element__item-triqngle:active {
+  color: #F4F4F4;
+}
+.first_page .wrapper .element__item a {
   position: absolute;
-  top: 45%;
-  transform: translateX(-50%);
-  left: 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #0E0E0E;
   font-weight: 300;
   font-size: 28px;
   line-height: 34px;
-}
-.first_page .wrapper .element__item .element__text-work {
-  top: 35%;
+  text-decoration: none;
 }
 .first_page .wrapper .element__item .element__text-about {
-  top: 60%;
+  top: 15%;
 }
 
 .lets_do {
   margin-top: -3px;
 }
 .lets_do .element_block {
-  border: 3px solid #EBE5E5;
+  border: 3px solid #F4F4F4;
 }
 .lets_do .element_block .divider__top {
   display: block;
   margin-top: 160px;
   height: 3px;
-  background-color: #EBE5E5;
+  background-color: #F4F4F4;
 }
 .lets_do .element_block .lets__title {
   padding: 110px 0 0 40px;
@@ -405,7 +419,7 @@ template {
   display: block;
   margin-top: 50px;
   height: 3px;
-  background-color: #EBE5E5;
+  background-color: #F4F4F4;
 }
 .lets_do .element_block .figures__block {
   display: flex;
@@ -425,7 +439,7 @@ template {
   margin-top: -3px;
 }
 .portfolio .element_block {
-  border: 3px solid #EBE5E5;
+  border: 3px solid #F4F4F4;
 }
 .portfolio .element_block .portfolio__wrapper {
   margin: 160px 0 160px 0;
@@ -438,7 +452,7 @@ template {
   position: relative;
   width: 567px;
   height: 356px;
-  border: 2px solid #EBE5E5;
+  border: 2px solid #F4F4F4;
   font-weight: 500;
   font-size: 80px;
   line-height: 96px;
@@ -478,7 +492,7 @@ template {
   margin-top: -3px;
 }
 .about_me .element_block {
-  border: 3px solid #EBE5E5;
+  border: 3px solid #F4F4F4;
 }
 .about_me .title {
   margin-top: 110px;
@@ -486,13 +500,13 @@ template {
   font-weight: 500;
   font-size: 84px;
   line-height: 101px;
-  color: #EBE5E5;
+  color: #F4F4F4;
 }
 .about_me .divider {
   display: block;
   margin-top: 50px;
   height: 3px;
-  background-color: #EBE5E5;
+  background-color: #F4F4F4;
 }
 .about_me .wrapper {
   padding: 50px 0 0 120px;
@@ -509,7 +523,7 @@ template {
 }
 .general_info .element_block {
   position: relative;
-  border: 3px solid #EBE5E5;
+  border: 3px solid #F4F4F4;
 }
 .general_info .wrapper {
   display: grid;
@@ -519,12 +533,12 @@ template {
   padding-top: 180px;
 }
 .general_info .wrapper .info {
-  border: 2px solid #EBE5E5;
+  border: 2px solid #F4F4F4;
   padding: 40px;
   font-weight: 300;
   font-size: 24px;
   line-height: 28px;
-  color: #EBE5E5;
+  color: #F4F4F4;
 }
 .general_info .wrapper .info_box1 {
   grid-column: 1/3;
@@ -538,26 +552,26 @@ template {
 }
 .lets_make .element_block {
   position: relative;
-  border: 3px solid #EBE5E5;
+  border: 3px solid #F4F4F4;
 }
 .lets_make .element_block .divider_top {
   display: block;
   margin-top: 140px;
   height: 3px;
-  background-color: #EBE5E5;
+  background-color: #F4F4F4;
 }
 .lets_make .element_block .title {
   margin: 140px 0 0 40px;
   font-weight: 500;
   font-size: 84px;
   line-height: 97px;
-  color: #EBE5E5;
+  color: #F4F4F4;
 }
 .lets_make .element_block .divider {
   display: block;
   margin-top: 140px;
   height: 3px;
-  background-color: #EBE5E5;
+  background-color: #F4F4F4;
 }
 .lets_make .element_block .wrapper {
   display: flex;
@@ -575,20 +589,20 @@ template {
   margin-top: -3px;
 }
 .contact .element_block {
-  border: 3px solid #EBE5E5;
+  border: 3px solid #F4F4F4;
 }
 .contact .element_block .divider {
   display: block;
   margin-top: 140px;
   height: 3px;
-  background-color: #EBE5E5;
+  background-color: #F4F4F4;
 }
 .contact .element_block .title {
   padding-left: 40px;
   font-weight: 500;
   font-size: 86px;
   line-height: 115px;
-  color: #EBE5E5;
+  color: #F4F4F4;
 }
 .contact .element_block .wrapper {
   position: relative;
@@ -598,16 +612,22 @@ template {
   grid-auto-rows: minmax(1fr);
 }
 .contact .element_block .wrapper .card {
+  display: flex;
+}
+.contact .element_block .wrapper .card:hover {
+  background: linear-gradient(334.21deg, rgba(25, 104, 106, 0.2) 1.62%, rgba(10, 10, 10, 0) 100%);
+}
+.contact .element_block .wrapper .card a {
   padding-top: 50%;
-  border: 2px solid #EBE5E5;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #F4F4F4;
   font-weight: 300;
   font-size: 40px;
   line-height: 46px;
-  color: #EBE5E5;
+  color: #F4F4F4;
   text-align: center;
-}
-.contact .element_block .wrapper .card a {
-  color: #EBE5E5;
+  text-decoration: none;
 }
 .contact .element_block .thanks {
   display: flex;
@@ -625,7 +645,7 @@ template {
   font-weight: 300;
   font-size: 24px;
   line-height: 28px;
-  color: #EBE5E5;
+  color: #F4F4F4;
   text-align: center;
   text-transform: uppercase;
   padding: 40px;

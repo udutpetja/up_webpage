@@ -28,6 +28,7 @@
         }
         .element__item {
             position: relative;
+            display: inline-block;
             transition: all 0.4s;
         &-rectangle {
             &:hover {
@@ -37,6 +38,9 @@
         &-semicircul {
             &:hover {
                 transform: rotate(-1deg);
+            }
+            &:active {
+                color: $main-color_white;
             }
         }
         &-star {
@@ -48,33 +52,44 @@
             &:hover {
                 transform: rotate(1deg);
                 }
+                &:active {
+                    color: $main-color_white
+                }
             }
         &-triqngle {
             &:hover {
                 transform: translate(4px);
             }
+            &:active {
+                color: $main-color_white
+            }
+        }
+        a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #0E0E0E;
+            font-weight: 300;
+            font-size: 28px;
+            line-height: 34px;
+            text-decoration: none;
+        }
+        .element__text-about {
+            top: 15%;
         }
 /*         &-line {
             &:hover {
                 transform: translate(-1px, -8px);
             }
         } */
-            .element__text {
-                display: block;
-                position: absolute;
-                top: 45%;
-                transform: translateX(-50%);
-                left: 50%;
-                font-weight: 300;
-                font-size: 28px;
-                line-height: 34px;
-                &-work {
-                    top: 35%;
-                }
-                &-about {
-                    top: 60%;
-                }
-            }
+        
         }
     }
 }
