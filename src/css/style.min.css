@@ -302,6 +302,7 @@ template {
 
 .scroll {
   z-index: -2;
+  /*     background-color: #0A0A0A; */
   background-image: linear-gradient(to right top, #1d0212, #1c0317, #1a041c, #170620, #100925, #0b0e28, #05132a, #00162c, #001a2c, #001d29, #002025, #002220);
   /*     background-attachment: fixed; */
 }
@@ -530,7 +531,7 @@ template {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, minmax(200px, auto));
   grid-auto-rows: minmax(1fr, auto);
-  padding-top: 180px;
+  padding-top: 160px;
 }
 .general_info .wrapper .info {
   border: 2px solid #F4F4F4;
@@ -569,7 +570,7 @@ template {
 }
 .lets_make .element_block .divider {
   display: block;
-  margin-top: 140px;
+  margin-top: 50px;
   height: 3px;
   background-color: #F4F4F4;
 }
