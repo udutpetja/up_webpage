@@ -4,12 +4,12 @@
         border: 3px solid $main-color_white;
         .divider {
             display: block;
-            margin-top: 140px;
+            margin-top: 160px;
             height: 3px;
             background-color: $main-color_white;
         }
         .title {
-            padding-left: 40px;
+            padding: 100px 0 50px 40px;
             font-weight: 500;
             font-size: 86px;
             line-height: 115px;
@@ -24,8 +24,10 @@
             .card {
                 display: flex;
                 &:hover {
+                 border: 2px solid #19686A;
+                }
+                &:active {
                     background: linear-gradient(334.21deg, rgba(25, 104, 106, 0.2) 1.62%, rgba(10, 10, 10, 0) 100%);
-
                 }
                 a {
                     padding-top: 50%;

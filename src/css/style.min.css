@@ -397,42 +397,42 @@ template {
   top: 15%;
 }
 
-.lets_do {
+.lets_look {
   margin-top: -3px;
 }
-.lets_do .element_block {
+.lets_look .element_block {
   border: 3px solid #F4F4F4;
 }
-.lets_do .element_block .divider__top {
+.lets_look .element_block .divider__top {
   display: block;
   margin-top: 160px;
   height: 3px;
   background-color: #F4F4F4;
 }
-.lets_do .element_block .lets__title {
-  padding: 110px 0 0 40px;
+.lets_look .element_block .lets__title {
+  padding: 100px 0 0 40px;
   font-weight: 500;
   font-size: 86px;
   line-height: 115px;
   color: #F3F3F3;
 }
-.lets_do .element_block .divider__lower {
+.lets_look .element_block .divider__lower {
   display: block;
   margin-top: 50px;
   height: 3px;
   background-color: #F4F4F4;
 }
-.lets_do .element_block .figures__block {
+.lets_look .element_block .figures__block {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-top: 28px;
 }
-.lets_do .element_block .figures__block .circle {
+.lets_look .element_block .figures__block .circle {
   padding-left: 40px;
   transition: all 2s;
 }
-.lets_do .element_block .figures__block .circle:hover {
+.lets_look .element_block .figures__block .circle:hover {
   transform: translate(545px);
 }
 
@@ -496,7 +496,7 @@ template {
   border: 3px solid #F4F4F4;
 }
 .about_me .title {
-  margin-top: 110px;
+  margin-top: 100px;
   padding-left: 40px;
   font-weight: 500;
   font-size: 84px;
@@ -557,12 +557,12 @@ template {
 }
 .lets_make .element_block .divider_top {
   display: block;
-  margin-top: 140px;
+  margin-top: 160px;
   height: 3px;
   background-color: #F4F4F4;
 }
 .lets_make .element_block .title {
-  margin: 140px 0 0 40px;
+  margin: 100px 0 0 40px;
   font-weight: 500;
   font-size: 84px;
   line-height: 97px;
@@ -594,12 +594,12 @@ template {
 }
 .contact .element_block .divider {
   display: block;
-  margin-top: 140px;
+  margin-top: 160px;
   height: 3px;
   background-color: #F4F4F4;
 }
 .contact .element_block .title {
-  padding-left: 40px;
+  padding: 100px 0 50px 40px;
   font-weight: 500;
   font-size: 86px;
   line-height: 115px;
@@ -616,6 +616,9 @@ template {
   display: flex;
 }
 .contact .element_block .wrapper .card:hover {
+  border: 2px solid #19686A;
+}
+.contact .element_block .wrapper .card:active {
   background: linear-gradient(334.21deg, rgba(25, 104, 106, 0.2) 1.62%, rgba(10, 10, 10, 0) 100%);
 }
 .contact .element_block .wrapper .card a {
